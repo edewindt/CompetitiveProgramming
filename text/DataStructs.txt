@@ -1,4 +1,0 @@
-Static Array: Most basic data structure, that is just a collection of elements. A static array has a fixed size that's allocated (decided) during initlization.
-Dynamic Array: The same as a static array except its length is dynamic, meaning it can change, this is represented as a <vector> in C++.
-Stack: Last In First Out (LIFO) data structure, can be thought of as a stack of cards or pancakes. It has the 3 methods, push(), to push an element to the top of the stack, pop() to remove the element from the top of the stack, and top() which retrieves the element at the top of the stack without popping it off.
-Queue: First In First Out (FIFO) data structure, can be thought of as a line, or conveyor belt. It supports 3 methods, push(), push an element to the back of the queue, pop() removing an element from the front of the queue, and front() which retrieves the element at the front of the queue without removing it.
