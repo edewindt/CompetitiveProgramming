@@ -11,3 +11,4 @@
 
 * **Priority Queue:** A special queue that sorts elements automatically based on a predetermined comparator function. In C++ this will automatically sort elements from highest to lowest. In other words, it will place the highest element first at the front giving it "priority". It supports three methods that work the same as described in other data structures. pop(), push(), top(). The difference being that these methods operate only on the highest element.
 
+* **Unordered Set:** A collection of elements or objects that has no duplicates, but in an unordered manner. This data structure works by hashing (asigning a hash value to every element for quick operations). It supports 3 methods, insert(), inserts an element if the element isn't already present, erase(), deletes an element if it exists, count(), returns 1 if the element exists, and returns 0 if it doesn't exist.
