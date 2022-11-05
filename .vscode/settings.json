@@ -24,6 +24,7 @@
         "*.rexx": "rexx",
         "cstdio": "cpp",
         "vector": "cpp",
-        "iostream": "cpp"
+        "iostream": "cpp",
+        "queue": "cpp"
     }
 }
