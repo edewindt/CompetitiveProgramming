@@ -19,4 +19,4 @@
 
 * **Ordered Map:** Ordered Maps have key value pairs that *are* in a specific order as the name implies. An ordered map supports all methods from an unordered map, but has 2 additional methods aswell. lower_bound(), returns an iterator pointing to the lowest key value pair greater than or equal to the the specified key. upper_bound() returns an iterator strictly greater than the specified key.
 
-* **Multiset:** A sorted set, that allows for duplicate elements. It supports all methods for a set, but the count() method returns the number of all instances of an element thaat exist in the set.
+* **Multiset:** A sorted set, that allows for duplicate elements. It supports all methods for a set, but the count() method returns the number of all instances of an element that exist in the set.
