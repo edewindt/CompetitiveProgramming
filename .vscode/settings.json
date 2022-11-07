@@ -27,6 +27,10 @@
         "iostream": "cpp",
         "queue": "cpp",
         "deque": "cpp",
-        "ostream": "cpp"
+        "ostream": "cpp",
+        "unordered_set": "cpp",
+        "filesystem": "cpp",
+        "xstring": "cpp",
+        "xtree": "cpp"
     }
 }
