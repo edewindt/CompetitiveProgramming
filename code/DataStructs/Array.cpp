@@ -1,12 +1,16 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-vector<string> v = {"YES", "NO", "MAYBE-SO"};
+string arr[6] = {"Sky", "Mai", "Emm", "Sam", "Gleb"};
 
 int main()
 {
-v.push_back("Hello");
-v.push_back("What?");
-v.erase(v.begin(), v.begin()+1);
-cout << v[3];
+arr[5] = "Allen";
+int n = sizeof(arr)/sizeof(arr[0]);
+cout << "My friends are: ";
+for (int i = 0; i < n; i++)
+{
+    cout << arr[i] << " ";
+}
+cout << endl;
 }
