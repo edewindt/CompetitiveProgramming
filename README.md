@@ -10,4 +10,7 @@ Directories will be added incrementally as I come across new information, or get
 
 ## Directories
 
-All Data Structures descriptions are located in: 'text/DataStructs.md' The code examples are located in: 'code/DataStructs/'
+* All Data Structures descriptions are located in: 'text/DataStructs.md' 
+* The code examples are located in: 'code/DataStructs/'
+* All Complexity descriptions are located in: 'text/Complexities.md' 
+* The code examples are located in: 'code/Complexity/'
