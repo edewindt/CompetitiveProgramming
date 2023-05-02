@@ -1,7 +1,7 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-set<string> us;
+unordered_set<string> us;
 
 int main()
 {
