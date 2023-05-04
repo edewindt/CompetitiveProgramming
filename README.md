@@ -14,3 +14,5 @@ Directories will be added incrementally as I come across new information, or get
     * The code examples are located in: 'code/DataStructs/'
 * All Complexity descriptions are located in: 'text/Complexities.md' 
     * The code examples are located in: 'code/Complexity/'
+* All Algorithm descriptions are located in: 'text/Algorithms.md' 
+    * The code examples are located in: 'code/Algorithms/'
