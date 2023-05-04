@@ -1,7 +1,9 @@
 /*
+
 You are given N (3 ≤ N ≤ 5000) integer points on the coordinate plane. Find the square
 of the maximum Euclidean distance (aka length of the straight line) between any two of the
 points.
+
 */
 #include <bits/stdc++.h>
 using namespace std;

@@ -5,3 +5,10 @@
     * Unordered Set/Map lookup, insertion and deletion.
     * Singular Operations
     * Instantiation
+* **O(N)/Linear:**
+    * Linear Search
+    * A for-loop
+    * Bubble Sort (Best Case)
+* **O(N^2)/Quadratic:**
+    * Bubble Sort (Worst Case)
+    * A nested for-loop
