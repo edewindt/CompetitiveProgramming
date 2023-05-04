@@ -11,11 +11,11 @@ Directories will be added incrementally as I come across new information, or get
 ## Directories
 
 ### Data Structures
-* Descriptions: 'text/DataStructs.md'
-* Code Examples: 'code/DataStructs/'
+* Descriptions: [a relative link](text/DataStructs.md)
+* Code Examples:[a relative link](code/DataStructs/) 
 ### Complexity
-* Descriptions: 'text/Complexities.md' 
-* Code Examples: 'code/Complexity/'
+* Descriptions:[a relative link](text/Complexities.md)
+* Code Examples:[a relative link](code/Complexity/)
 ### Algorithms
-* Descriptions: 'text/Algorithms.md'
-* Code Examples: 'code/Algorithms/'
+* Descriptions:[a relative link](text/Algorithms.md)
+* Code Examples:[a relative link](code/Algorithms/)
