@@ -19,6 +19,6 @@
 
 * **Ordered Map:** Ordered Maps have key value pairs that *are* in a specific order as the name implies. An ordered map supports all methods from an unordered map, but has 2 additional methods aswell. lower_bound(), returns an iterator pointing to the lowest key value pair greater than or equal to the the specified key. upper_bound() returns an iterator strictly greater than the specified key.
 
-* **Multimap:** A map that allows for duplicate keys. This is most commonly used as a tree data structure. Retrievinh values must be done by using a find() method, which returns the first valuje associated with a key, or you can retrieve multiple values by means of an iterator.
+* **Multimap:** A map that allows for duplicate keys. This is most commonly used as a tree data structure. Retrieving values must be done by using a find() method, which returns the first value associated with a key, or you can retrieve multiple values by means of an iterator.
 
 * **Multiset:** A sorted set, that allows for duplicate elements. It supports all methods for a set, but the count() method returns the number of all instances of an element that exist in the set.
