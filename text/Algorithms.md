@@ -1,4 +1,5 @@
 # Algorithms
 
 * **Brute Force (Complete Search):** This algorithm works by attempting all possible solutions. This is one of the simplest solutions, but also the one of the slowest, and grows at a rate of O(nm). N being the size of input, and M being the number of possible solutions. Therefore Time Complexity is O(nm). Space Complexity stays porpotional to the input size being O(n) in most cases.
+
 * **Binary Search:** In order to use this algorithm, the array or list must be sorted. This algorithm works by finding the midpoint of an array, then checking if the midpoint is the target value, and if it is, then the algorithm finishes in O(1) time. If the midpoint is larger than the target value, then all points before the midpoint are eliminated. If the midpoint is smaller than the target value, then all points after the midpoint are eliminated. This process repeats until the target value becomes the midpoint, at which point the target value has been found. In the worst case, Time Complexity is O(Log(n)). Space Complexity is O(1).
