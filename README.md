@@ -19,3 +19,6 @@ Directories will be added incrementally as I come across new information, or get
 ### Algorithms
 * Descriptions:[a relative link](text/Algorithms.md)
 * Code Examples:[a relative link](code/Algorithms/)
+### Bit Manipulation
+* Descriptions:[a relative link](text/BitManipulation.md)
+* Code Examples:[a relative link](code/BitManipulation/)
