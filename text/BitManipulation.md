@@ -2,7 +2,7 @@
 
 ## Bitwise Operators
 
-* When two values are compared, they are compared at the binary level and each of their bits goes through the process of evaluating to either a 0 or 1. *
+*When two values are compared, they are compared at the binary level and each of their bits goes through the process of evaluating to either a 0 or 1.*
 
 * **Binary AND &:** When two bits are 1, then the result from the & operator will be 1, if two bits are anything else, than the result will be 0. 
 * **Binary OR |:** When two bits are 0, then the result from the | operator will be 0, if two bits are anything else, than the result will be 1.
