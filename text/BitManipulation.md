@@ -15,3 +15,7 @@
 * **Binary Left Shift <<:** Shifts the bits of the first operand LEFT by as many places as the second operand (this adds bits). This essntially is the same as multiplying by 2 to the power of the second operand.
 
 * **Binary Right Shift >>:** Shifts the bits of the first operand RIGHT by as many places as the second operand (this subtracts bits). This essentially is the same as dividing by 2 to the power of the second operand.
+
+## Techniques
+
+* **Binary AND &:** 
