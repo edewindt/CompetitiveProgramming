@@ -11,7 +11,5 @@ int main()
     {
         cout << "Even" << endl;
     }
-    
-    
     return 0;
 }
