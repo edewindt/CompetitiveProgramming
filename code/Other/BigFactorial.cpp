@@ -7,7 +7,7 @@ void multiply(vector<int> &a, int no, int &size)
     {
         int product = a[i] * no + carry;
         a[i] = product % 10;
-        carry = product / 1;
+        carry = product / 10;
     }
     while (carry)
     {
@@ -15,7 +15,6 @@ void multiply(vector<int> &a, int no, int &size)
         carry = carry/10;
         size = size + 1;
     }
-    
 }
 void bigFactorial(int n)
 {
@@ -23,10 +22,13 @@ void bigFactorial(int n)
     a[0] = 1;
     int size = 1;
 
-    for (int i = 0; i <= n; i++)
+    for (int i=2; i<=n; i++)
     {
         multiply(a,i,size);
     }
+
+    // Print the Result in Reverse Order
+    // size - 1 to 0
     for (int i = size - 1; i >= 0; i--)
     {
        cout << a[i];
