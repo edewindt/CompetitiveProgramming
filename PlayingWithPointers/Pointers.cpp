@@ -15,7 +15,16 @@ int main()
     array3[0] = 69;
     cout << *array3 << endl;
     char hello[18] = "Hello World";
+    hello[11] = 's';
     cout << hello << endl;
+    char *hello2;
+    hello2 = (char*)malloc(18*sizeof(char));
+    hello2[0] = 'H';
+    hello2[1] = 'e';
+    hello2[2] = 'l';
+    hello2[3] = '\0';
+    cout << hello2 << endl;
+    free(hello2);
     int number = 69;
     int *Pointer1 = &number;
     number++;
