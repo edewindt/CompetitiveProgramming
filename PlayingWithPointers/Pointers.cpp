@@ -11,6 +11,9 @@ int main()
     //Dynamically Allocated Array
     int *array2;
     array2 = (int*)malloc(5*sizeof(int));
+    if(array2 == NULL){
+        exit( 1 );
+    }
     array2[0] = 23;
     cout << *array2 << endl;
     free(array2);
@@ -18,6 +21,9 @@ int main()
     //Dynamically Allocated Using New Keyword
     int *array3;
     array3 = new int[5];
+    if(array3 == NULL){
+        exit( 1 );
+    }
     array3[0] = 69;
     cout << *array3 << endl;
     delete(array3);
@@ -30,6 +36,9 @@ int main()
     //Dynamically Allocated String
     char *hello2;
     hello2 = (char*)malloc(18*sizeof(char));
+    if(hello2 == NULL){
+        exit( 1 );
+    }
     hello2[0] = 'H';
     hello2[1] = 'e';
     hello2[2] = 'l';
@@ -40,6 +49,9 @@ int main()
     //Dynamically allocated initilized as all Zeros
     int * array5;
     array5 = (int*)calloc(5,sizeof(int));
+    if(array5 == NULL){
+        exit( 1 );
+    }
     for (int i = 0; i < 5; i++)
     {
         cout << array5[i] << endl;
