@@ -1,16 +1,32 @@
 #include <bits/stdc++.h>
 using namespace std;
 
-void addNums(int a, int b, int *res)
-{
-    *res = a + b;
-}
+// void addNums(int a, int b, int *res)
+// {
+//     *res = a + b;
+// }
+
+struct Person{
+    int age;
+    char *name;
+};
 int main()
 {
-int res = 0;
-addNums(2,2, &res);
+struct Person Elias;
 
-cout << res << endl;
+Elias.age = 21;
+cout << Elias.age << endl;
+
+char name[] = "Elias";
+
+Elias.name = name;
+cout << Elias.name << endl;
+
+
+// int res = 0;
+// addNums(2,2, &res);
+
+// cout << res << endl;
 
     // //Statically Allocated Array
     // int array1[6] = {1,2,3,4,5,6};
