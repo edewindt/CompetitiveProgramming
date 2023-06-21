@@ -10,17 +10,38 @@ struct Person{
     int age;
     char *name;
 };
+
+struct City{
+    char *city_name;
+};
+struct State {
+    City *city;
+};
+struct Country{
+    State* state;
+};
 int main()
 {
-struct Person Elias;
+    char city[] = "Chicago";
+    struct City Chicago = {city};
+    struct State Illinois = {&Chicago};
+    struct Country UnitedStates = {&Illinois};
+    struct Country *UnitedStates_ptr = &UnitedStates;
+    char *cityname = UnitedStates_ptr->state->city->city_name;
 
-Elias.age = 21;
-cout << Elias.age << endl;
+    cout << cityname << endl;
+// struct Person Elias;
 
-char name[] = "Elias";
+// struct Person *person_ptr;
+// person_ptr = &Elias;
 
-Elias.name = name;
-cout << Elias.name << endl;
+// person_ptr->age=21;
+// cout << Elias.age << endl;
+
+// char name[] = "Elias";
+
+// person_ptr->name=name;
+// cout << Elias.name << endl;
 
 
 // int res = 0;
