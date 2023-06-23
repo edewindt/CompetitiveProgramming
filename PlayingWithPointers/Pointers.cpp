@@ -6,48 +6,55 @@ using namespace std;
 //     *res = a + b;
 // }
 
-struct Person{
+struct Person
+{
     int age;
     char *name;
 };
 
-struct City{
+struct City
+{
     char *city_name;
 };
-struct State {
+struct State
+{
     City *city;
 };
-struct Country{
-    State* state;
+struct Country
+{
+    State *state;
+    State *state2;
 };
 int main()
 {
     char city[] = "Chicago";
+    char city2[] = "Detroit";
     struct City Chicago = {city};
+    struct City Detroit = {city2};
     struct State Illinois = {&Chicago};
-    struct Country UnitedStates = {&Illinois};
+    struct State Kalos = {&Detroit};
+    struct Country UnitedStates = {&Illinois, &Kalos};
     struct Country *UnitedStates_ptr = &UnitedStates;
-    char *cityname = UnitedStates_ptr->state->city->city_name;
-
+    // char *cityname = UnitedStates_ptr->state->city->city_name;
+    char *cityname = (*(*(*UnitedStates_ptr).state2).city).city_name;
     cout << cityname << endl;
-// struct Person Elias;
+    // struct Person Elias;
 
-// struct Person *person_ptr;
-// person_ptr = &Elias;
+    // struct Person *person_ptr;
+    // person_ptr = &Elias;
 
-// person_ptr->age=21;
-// cout << Elias.age << endl;
+    // person_ptr->age=21;
+    // cout << Elias.age << endl;
 
-// char name[] = "Elias";
+    // char name[] = "Elias";
 
-// person_ptr->name=name;
-// cout << Elias.name << endl;
+    // (*person_ptr).name = name;
+    // cout << Elias.name << endl;
 
+    // int res = 0;
+    // addNums(2,2, &res);
 
-// int res = 0;
-// addNums(2,2, &res);
-
-// cout << res << endl;
+    // cout << res << endl;
 
     // //Statically Allocated Array
     // int array1[6] = {1,2,3,4,5,6};
@@ -119,7 +126,7 @@ int main()
     // //Segmentaion Fault
     // // int *getting = NULL;
     // // getting[2] = 5;
-    
+
     // resized_array[6] = 10;
     // cout << resized_array[4] << endl;
     // cout << resized_array[6] << endl;
