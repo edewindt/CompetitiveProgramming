@@ -6,38 +6,38 @@ using namespace std;
 //     *res = a + b;
 // }
 
-struct Person
-{
-    int age;
-    char *name;
-};
+// struct Person
+// {
+//     int age;
+//     char *name;
+// };
 
-struct City
-{
-    char *city_name;
-};
-struct State
-{
-    City *city;
-};
-struct Country
-{
-    State *state;
-    State *state2;
-};
+// struct City
+// {
+//     char *city_name;
+// };
+// struct State
+// {
+//     City *city;
+// };
+// struct Country
+// {
+//     State *state;
+//     State *state2;
+// };
 int main()
 {
-    char city[] = "Chicago";
-    char city2[] = "Detroit";
-    struct City Chicago = {city};
-    struct City Detroit = {city2};
-    struct State Illinois = {&Chicago};
-    struct State Kalos = {&Detroit};
-    struct Country UnitedStates = {&Illinois, &Kalos};
-    struct Country *UnitedStates_ptr = &UnitedStates;
-    // char *cityname = UnitedStates_ptr->state->city->city_name;
-    char *cityname = (*(*(*UnitedStates_ptr).state2).city).city_name;
-    cout << cityname << endl;
+//     char city[] = "Chicago";
+//     char city2[] = "Detroit";
+//     struct City Chicago = {city};
+//     struct City Detroit = {city2};
+//     struct State Illinois = {&Chicago};
+//     struct State Kalos = {&Detroit};
+//     struct Country UnitedStates = {&Illinois, &Kalos};
+//     struct Country *UnitedStates_ptr = &UnitedStates;
+//     // char *cityname = UnitedStates_ptr->state->city->city_name;
+//     char *cityname = (*(*(*UnitedStates_ptr).state2).city).city_name;
+//     cout << cityname << endl;
     // struct Person Elias;
 
     // struct Person *person_ptr;
@@ -133,11 +133,28 @@ int main()
     // free(resized_array);
 
     // //Regular Pointer
-    // int number = 69;
+    int number = 69;
+    int num_copy = number;
+    number++;
+    cout << number << endl;
+    cout << num_copy << endl;
     // int *Pointer1 = &number;
     // number++;
     // *Pointer1+=1;
-    // cout << *Pointer1 << endl;
+    // cout << Pointer1 << endl;
     // cout << number <<endl;
+
+
+
+//     int numbers[] = {1, 2, 3, 4, 5};
+//     int myInt = 10;
+//     struct Person {
+//         char name[20];
+//         int age;
+//     };
+
+// struct Person person = {"John Doe", 25};
+
+// cout << &numbers << endl << &myInt << endl << &person << endl;
     return 0;
 }
