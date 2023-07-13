@@ -35,7 +35,7 @@ int main()
     struct Country UnitedStates = {&Illinois};
     struct Country *UnitedStates_ptr = &UnitedStates;
     char *cityname = UnitedStates_ptr->state->city->city_name;
-    char *cityname = (*(*(*UnitedStates_ptr).state).city).city_name;
+    // char *cityname = (*(*(*UnitedStates_ptr).state).city).city_name;
 //     cout << cityname << endl;
     struct Person ProjectXiel;
 
@@ -60,39 +60,41 @@ int main()
     // //Statically Allocated Array
 
     // {
-    int array1[6];
-    array1[0] = 23;
-    cout << *array1 << endl;
-    // int array1[6] = {1,2,3,4,5,6};
+    // int array1[6];
+    // array1[0] = 23;
     // cout << *array1 << endl;
-    // cout << &array1[0] << endl;
-    // array1[0] = 55;
-    // cout << array1[0] << endl;
-    // (*array1 + 2) = 4; 
-    // cout << (&array1[0] == array1) << endl;
+    int array1[6] = {1,2,3,4,5,6};
+    int n = sizeof(array1)/sizeof(array1[0]);
+    cout << *array1 << endl;
+    array1[0] = 55;
+    for (int i = 0; i < n; i++)
+    {
+        cout << (*array1 + i) << endl;
+    }
+    
     // cout << (array1 + 1) << endl;
     // cout << (array1 + 2) << endl;
     // cout << (array1 + 3) << endl;
     // cout << (array1 + 4) << endl;
     // cout << (array1 + 5) << endl;
-    // //Dynamically Allocated Array
-    int size = 6;
-    int *array2 = (int*)malloc(size*sizeof(int));
-    if(array2 == NULL){
-        exit( 1 );
-    }
-    array2[0] = 23;
-    cout << *array2 << endl;
-    free(array2);
-    // cout << sizeof(int) << endl;
-    // //Dynamically Allocated Using New Keyword
-    int *array3 = new int[5];
-    // if(array3 == NULL){
+    //Dynamically Allocated Array
+    // int size = 6;
+    // int *array2 = (int*)malloc(size*sizeof(int));
+    // if(array2 == NULL){
     //     exit( 1 );
     // }
-    array3[0] = 69;
-    cout << *array3 << endl;
-    delete(array3);
+    // array2[0] = 23;
+    // cout << *array2 << endl;
+    // free(array2);
+    // // cout << sizeof(int) << endl;
+    // // //Dynamically Allocated Using New Keyword
+    // int *array3 = new int[5];
+    // // if(array3 == NULL){
+    // //     exit( 1 );
+    // // }
+    // array3[0] = 69;
+    // cout << *array3 << endl;
+    // delete(array3);
 
     // //Segmentation Fault
     // char *name = "ProjectXiel";
@@ -105,32 +107,32 @@ int main()
     // cout << hello << endl;
 
     //Contigous String
-    char *hello1;
-    hello1 = (char*)calloc(18,sizeof(char));
-    if (hello1 != NULL)
-    {
-        strncpy(hello1, "Hello", 18);
-    }
-    cout << hello1 << endl;
-    free(hello1);
+    // char *hello1;
+    // hello1 = (char*)calloc(18,sizeof(char));
+    // if (hello1 != NULL)
+    // {
+    //     strncpy(hello1, "Hello", 18);
+    // }
+    // cout << hello1 << endl;
+    // free(hello1);
 
 
 
-    // //Dynamically Allocated String
-    char *hello2;
-    hello2 = (char*)malloc(18*sizeof(char));
-    if(hello2 == NULL){
-        exit( 1 );
-    }
-    hello2[0] = 'H';
-    hello2[1] = 'e';
-    hello2[2] = 'l';
-    hello2[3] = 'l';
-    hello2[4] = 48;
-    hello2[5] = '\0';
+    // // //Dynamically Allocated String
+    // char *hello2;
+    // hello2 = (char*)malloc(18*sizeof(char));
+    // if(hello2 == NULL){
+    //     exit( 1 );
+    // }
+    // hello2[0] = 'H';
+    // hello2[1] = 'e';
+    // hello2[2] = 'l';
+    // hello2[3] = 'l';
+    // hello2[4] = 48;
+    // hello2[5] = '\0';
 
-    cout << hello2 << endl;
-    free(hello2);
+    // cout << hello2 << endl;
+    // free(hello2);
 
     // //Dynamically allocated initilized as all Zeros
     // int * array4 = (int*)calloc(5,sizeof(int));

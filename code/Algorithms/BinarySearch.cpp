@@ -38,7 +38,11 @@ int main()
     vector<int> v = {2,3,4,5,6,7,8,11,15,19,22,33,35,37,43};
     int n = v.size();
     int x = 35;
+    auto start_time = clock();
     int t = binarySearch(v, n, x);
+    auto end_time = clock();
+    cout << end_time - start_time << endl;
+    cout << "Start Time: " << start_time << " End Time: " << end_time << endl;
     cout << t << endl;
     return 0;
 }
